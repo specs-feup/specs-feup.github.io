@@ -1,0 +1,15 @@
+{
+  "name": "SPeCS Node Workspace",
+  "type": "module",
+  "workspaces": [
+    "packages/Clava-JS",
+    "lara-framework/Lara-JS"
+  ],
+  "scripts": {
+    "docs": "typedoc --out docs/"
+  },
+  "devDependencies": {
+    "typedoc": "^0.26.0",
+    "typedoc-plugin-rename-defaults": "^0.7.1"
+  }
+}
