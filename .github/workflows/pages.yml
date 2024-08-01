@@ -37,6 +37,10 @@ jobs:
           repository: specs-feup/lara-framework
           path: lara-framework
           ref: feature/lara-js
+      - run: |
+          cd lara-framework/Lara-JS
+          npm run build
+          cd ../..
 
       - name: Checkout clava
         uses: actions/checkout@v4
@@ -44,12 +48,20 @@ jobs:
           repository: specs-feup/clava
           path: clava
           ref: feature/clava-js
+      - run: |
+          cd clava/Clava-JS
+          npm run build
+          cd ../..
 
       - name: Checkout alpakka
         uses: actions/checkout@v4
         with:
           repository: specs-feup/alpakka
           path: alpakka
+      - run: |
+          cd alpakka/Alpakka-JS
+          npm run build
+          cd ../..
 
       - name: Build
         run: |
