@@ -3,7 +3,8 @@
   "type": "module",
   "workspaces": [
     "lara-framework/Lara-JS",
-    "clava/Clava-JS"
+    "clava/Clava-JS",
+    "alpakka/Alpakka-JS"
   ],
   "scripts": {
     "docs": "typedoc --out docs/"
