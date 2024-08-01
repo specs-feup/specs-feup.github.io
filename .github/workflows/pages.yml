@@ -35,18 +35,21 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: specs-feup/lara-framework
+          path: lara-framework
           ref: feature/lara-js
 
       - name: Checkout clava
         uses: actions/checkout@v4
         with:
           repository: specs-feup/clava
+          path: clava
           ref: feature/clava-js
 
       - name: Checkout alpakka
         uses: actions/checkout@v4
         with:
           repository: specs-feup/alpakka
+          path: alpakka
 
       - name: Build
         run: |
