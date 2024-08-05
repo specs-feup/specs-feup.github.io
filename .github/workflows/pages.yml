@@ -51,6 +51,12 @@ jobs:
           repository: specs-feup/alpakka
           path: alpakka
 
+      - name: Checkout lara-flow
+        uses: actions/checkout@v4
+        with:
+          repository: specs-feup/lara-flow
+          path: lara-flow
+
       - name: Build
         run: |
           npm install
