@@ -20,7 +20,7 @@
 | [Jackdaw](https://github.com/specs-feup/jsweaver)              | Javascript | ![](https://github.com/specs-feup/jsweaver/actions/workflows/ant-lara-js.yml/badge.svg) | 
 | [AnyWeaver](https://github.com/specs-feup/anyweaver)           | Bring your own<br> ANTLR grammar | ![](https://github.com/specs-feup/anyweaver/actions/workflows/lara-js.yml/badge.svg) |
 | [Alpakka](https://github.com/specs-feup/alpakka)               | Smali<br> (Android bytecode) | ![](https://github.com/specs-feup/alpakka/actions/workflows/lara-js.yml/badge.svg) |
-| [Coral](https://github.com/specs-feup/coral) | Clava | ![](https://github.com/specs-feup/coral/actions/workflows/lara-js.yml/badge.svg) |
+| [Coral](https://github.com/specs-feup/coral) | Clava | ![](https://github.com/specs-feup/coral/actions/workflows/tests.yml/badge.svg) |
 | [Clava Benchmarks](https://github.com/specs-feup/clava-benchmarks-tests) | Clava | ![](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/lara-js.yml/badge.svg) |
 | [Clava Examples](https://github.com/specs-feup/clava-examples) | Clava | ![](https://github.com/specs-feup/clava-examples/actions/workflows/lara-js.yml/badge.svg) |
 
