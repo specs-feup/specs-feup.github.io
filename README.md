@@ -8,7 +8,7 @@
 | [Jackdaw](https://github.com/specs-feup/jsweaver)              | Javascript | ![](https://github.com/specs-feup/jsweaver/actions/workflows/ant-main.yml/badge.svg) | ![](https://github.com/specs-feup/jsweaver/actions/workflows/ant-staging.yml/badge.svg) | ![](https://github.com/specs-feup/jsweaver/actions/workflows/ant-lara-2.0-legacy.yml/badge.svg) |
 | [Matisse](https://github.com/specs-feup/matisse)               | MATLAB | N/A | N/A | ![](https://github.com/specs-feup/matisse/actions/workflows/ant-lara-2.0-legacy.yml/badge.svg) |
 | [AnyWeaver](https://github.com/specs-feup/anyweaver)           | Bring your own<br> ANTLR grammar | ![](https://github.com/specs-feup/anyweaver/actions/workflows/main.yml/badge.svg) | ![](https://github.com/specs-feup/anyweaver/actions/workflows/staging.yml/badge.svg) | N/A |
-| [Alpakka](https://github.com/specs-feup/alpakka)               | Smali<br> (Android bytecode) | ![](https://github.com/specs-feup/alpakka/actions/workflows/main.yml/badge.svg) | ![](https://github.com/specs-feup/alpakka/actions/workflows/staging.yml/badge.svg) | N/A |
+| [Alpakka](https://github.com/specs-feup/alpakka)               | Smali<br> (Android bytecode) | ![nightly](https://github.com/specs-feup/alpakka/actions/workflows/nightly.yml/badge.svg?branch=main) | ![nightly](https://github.com/specs-feup/alpakka/actions/workflows/nightly.yml/badge.svg?branch=staging) | N/A |
 
 
 # LARA Libraries Status
