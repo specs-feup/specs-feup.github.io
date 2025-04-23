@@ -4,8 +4,10 @@
   "workspaces": [
     "lara-framework/Lara-JS",
     "clava/Clava-JS",
+    "kadabra/Kadabra-JS",
     "alpakka/Alpakka-JS",
-    "lara-flow"
+    "lara-flow",
+    "clava-flow"
   ],
   "scripts": {
     "docs": "typedoc --out docs/"
