@@ -49,7 +49,7 @@ jobs:
           repository: specs-feup/kadabra
           path: kadabra
           # Remove when Kadabra has been brough up-to-speed
-          branch: "kadabra-js"
+          ref: "kadabra-js"
 
       - name: Checkout Alpakka
         uses: actions/checkout@v4
