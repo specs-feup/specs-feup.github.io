@@ -6,8 +6,7 @@
     "clava/Clava-JS",
     "kadabra/Kadabra-JS",
     "alpakka/Alpakka-JS",
-    "lara-flow",
-    "clava-flow"
+    "lara-flow"
   ],
   "scripts": {
     "docs": "typedoc --out docs/"
