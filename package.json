@@ -7,9 +7,12 @@
     "kadabra/Kadabra-JS",
     "alpakka/Alpakka-JS",
     "flow",
-    "lara-flow",
     "clava-flow",
-    "clava-misra"
+    "clava-misra",
+    "extended-task-graph",
+    "clava-vitis-integration",
+    "clava-code-transforms",
+    "hoopa"
   ],
   "scripts": {
     "docs": "typedoc --out docs/"

@@ -63,12 +63,6 @@ jobs:
           repository: specs-feup/flow
           path: flow
 
-      - name: Checkout lara-flow
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/lara-flow
-          path: lara-flow
-
       - name: Checkout clava-flow
         uses: actions/checkout@v4
         with:
@@ -80,6 +74,30 @@ jobs:
         with:
           repository: specs-feup/clava-misra
           path: clava-misra
+
+      - name: Checkout extended-task-graph
+        uses: actions/checkout@v4
+        with:
+          repository: specs-feup/extended-task-graph
+          path: extended-task-graph
+
+      - name: Checkout clava-vitis-integration
+        uses: actions/checkout@v4
+        with:
+          repository: specs-feup/clava-vitis-integration
+          path: clava-vitis-integration
+
+      - name: Checkout clava-code-transforms
+        uses: actions/checkout@v4
+        with:
+          repository: specs-feup/clava-code-transforms
+          path: clava-code-transforms
+
+      - name: Checkout hoopa
+        uses: actions/checkout@v4
+        with:
+          repository: specs-feup/hoopa
+          path: hoopa
 
       - name: Build
         run: |
@@ -103,6 +121,18 @@ jobs:
           npm run build
           cd ..
           cd clava-misra
+          npm run build
+          cd ..
+          cd extended-task-graph
+          npm run build
+          cd ..
+          cd clava-vitis-integration
+          npm run build
+          cd ..
+          cd clava-code-transforms
+          npm run build
+          cd ..
+          cd hoopa
           npm run build
           cd ..
           npm run docs
