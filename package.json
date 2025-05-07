@@ -10,6 +10,7 @@
     "clava-flow",
     "clava-misra",
     "extended-task-graph",
+    "clava-lite-benchmarks",
     "clava-vitis-integration",
     "clava-code-transforms",
     "hoopa"

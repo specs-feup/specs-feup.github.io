@@ -81,6 +81,12 @@ jobs:
           repository: specs-feup/extended-task-graph
           path: extended-task-graph
 
+      - name: Checkout clava-lite-benchmarks
+        uses: actions/checkout@v4
+        with:
+          repository: specs-feup/clava-lite-benchmarks
+          path: clava-lite-benchmarks
+
       - name: Checkout clava-vitis-integration
         uses: actions/checkout@v4
         with:
@@ -124,6 +130,9 @@ jobs:
           npm run build
           cd ..
           cd extended-task-graph
+          npm run build
+          cd ..
+          cd clava-lite-benchmarks
           npm run build
           cd ..
           cd clava-vitis-integration
