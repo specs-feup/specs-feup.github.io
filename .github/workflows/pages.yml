@@ -63,6 +63,18 @@ jobs:
           repository: specs-feup/lara-flow
           path: lara-flow
 
+      - name: Checkout clava-flow
+        uses: actions/checkout@v4
+        with:
+          repository: specs-feup/clava-flow
+          path: clava-flow
+
+      - name: Checkout clava-misra
+        uses: actions/checkout@v4
+        with:
+          repository: specs-feup/clava-misra
+          path: clava-misra
+
       - name: Build
         run: |
           npm install
@@ -78,6 +90,12 @@ jobs:
           cd alpakka/Alpakka-JS
           npm run build
           cd ../..
+          cd clava-flow
+          npm run build
+          cd ..
+          cd clava-misra
+          npm run build
+          cd ..
           npm run docs
 
       - name: Upload artifact
