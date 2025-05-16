@@ -9,10 +9,10 @@
     "flow",
     "clava-flow",
     "clava-misra",
-    "extended-task-graph",
     "clava-lite-benchmarks",
-    "clava-vitis-integration",
     "clava-code-transforms",
+    "extended-task-graph",
+    "clava-vitis-integration",
     "hoopa"
   ],
   "scripts": {
