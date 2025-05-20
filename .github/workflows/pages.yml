@@ -89,8 +89,8 @@ jobs:
             (cd "$proj" && npm run build)
           done
 
-          echo "Building documentation"
-          npm run docs
+      - name: Build documentation 
+        run: npm run docs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
