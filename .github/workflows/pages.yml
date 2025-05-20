@@ -28,122 +28,68 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
 
-      - name: Checkout
+      - name: Checkout main repo
         uses: actions/checkout@v4
 
-      - name: Checkout lara-framework
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/lara-framework
-          path: lara-framework
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Checkout Clava
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/clava
-          path: clava
+      - name: Read project list from package.json
+        id: project-list
+        run: |
+          echo "Reading projects from package.json"
+          # Extracts the list of project paths from the 'projects' array
+          # in the package.json and stores them in a multi-line string output.
+          PROJECTS=$(jq -r '.projects[]' package.json)
+          echo "$PROJECTS" | while read -r project; do
+            echo "::add-mask::$project"
+          done
+          echo "projects<<EOF" >> $GITHUB_OUTPUT
+          echo "$PROJECTS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
-      - name: Checkout Kadabra
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/kadabra
-          path: kadabra
-          # Remove when Kadabra has been brough up-to-speed
-          ref: "kadabra-js"
+      - name: Checkout dependencies
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REPOS=(
+            "specs-feup/lara-framework"
+            "specs-feup/clava"
+            "specs-feup/kadabra@kadabra-js"
+            "specs-feup/alpakka"
+            "specs-feup/flow"
+            "specs-feup/clava-flow"
+            "specs-feup/clava-misra"
+            "specs-feup/clava-lite-benchmarks"
+            "specs-feup/clava-code-transforms"
+            "specs-feup/extended-task-graph"
+            "specs-feup/clava-vitis-integration"
+            "specs-feup/hoopa"
+          )
 
-      - name: Checkout Alpakka
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/alpakka
-          path: alpakka
+          for repo_entry in "${REPOS[@]}"; do
+            if [[ "$repo_entry" == *"@"* ]]; then
+              IFS='@' read -r repo ref <<< "$repo_entry"
+              repo_name=$(basename "$repo")
+              echo "Cloning $repo at ref $ref into $repo_name"
+              git clone --depth 1 --branch "$ref" "https://x-access-token:${GH_TOKEN}@github.com/$repo.git" "$repo_name"
+            else
+              repo_name=$(basename "$repo_entry")
+              echo "Cloning $repo_entry into $repo_name"
+              git clone --depth 1 "https://x-access-token:${GH_TOKEN}@github.com/$repo_entry.git" "$repo_name"
+            fi
+          done
 
-      - name: Checkout flow
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/flow
-          path: flow
-
-      - name: Checkout clava-flow
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/clava-flow
-          path: clava-flow
-
-      - name: Checkout clava-misra
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/clava-misra
-          path: clava-misra
-
-      - name: Checkout clava-lite-benchmarks
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/clava-lite-benchmarks
-          path: clava-lite-benchmarks
-
-      - name: Checkout clava-code-transforms
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/clava-code-transforms
-          path: clava-code-transforms
-
-      - name: Checkout extended-task-graph
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/extended-task-graph
-          path: extended-task-graph
-
-      - name: Checkout clava-vitis-integration
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/clava-vitis-integration
-          path: clava-vitis-integration
-
-      - name: Checkout hoopa
-        uses: actions/checkout@v4
-        with:
-          repository: specs-feup/hoopa
-          path: hoopa
-
-      - name: Build
+      - name: Build all projects
         run: |
           npm install
-          cd lara-framework/Lara-JS
-          npm run build
-          cd ../..
-          cd clava/Clava-JS
-          npm run build
-          cd ../..
-          cd kadabra/Kadabra-JS
-          npm run build
-          cd ../..
-          cd alpakka/Alpakka-JS
-          npm run build
-          cd ../..
-          cd flow
-          npm run build
-          cd ..
-          cd clava-flow
-          npm run build
-          cd ..
-          cd clava-misra
-          npm run build
-          cd ..
-          cd clava-lite-benchmarks
-          npm run build
-          cd ..
-          cd clava-code-transforms
-          npm run build
-          cd ..
-          cd extended-task-graph
-          npm run build
-          cd ..
-          cd clava-vitis-integration
-          npm run build
-          cd ..
-          cd hoopa
-          npm run build
-          cd ..
+
+          echo "${{ steps.project-list.outputs.projects }}" | while read -r proj; do
+            echo "Building $proj"
+            (cd "$proj" && npm run build)
+          done
+
+          echo "Building documentation"
           npm run docs
 
       - name: Upload artifact
