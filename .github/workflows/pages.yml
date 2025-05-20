@@ -31,16 +31,16 @@ jobs:
       - name: Checkout main repo
         uses: actions/checkout@v4
 
-      - name: Install jq
-        run: sudo apt-get update && sudo apt-get install -y jq
+      #- name: Install jq
+      #  run: sudo apt-get update && sudo apt-get install -y jq
 
       - name: Read project list from package.json
         id: project-list
         run: |
           echo "Reading projects from package.json"
-          # Extracts the list of project paths from the 'projects' array
+          # Extracts the list of project paths from the 'workspaces' array
           # in the package.json and stores them in a multi-line string output.
-          PROJECTS=$(jq -r '.projects[]' package.json)
+          PROJECTS=$(jq -r '.workspaces[]' package.json)
           echo "$PROJECTS" | while read -r project; do
             echo "::add-mask::$project"
           done
