@@ -6,6 +6,7 @@
     "clava/Clava-JS",
     "kadabra/Kadabra-JS",
     "alpakka/Alpakka-JS",
+    "coral",
     "flow",
     "clava-flow",
     "clava-misra",

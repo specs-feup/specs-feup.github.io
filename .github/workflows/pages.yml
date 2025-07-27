@@ -57,6 +57,7 @@ jobs:
             "specs-feup/clava"
             "specs-feup/kadabra@kadabra-js"
             "specs-feup/alpakka"
+            "specs-feup/coral"
             "specs-feup/flow"
             "specs-feup/clava-flow"
             "specs-feup/clava-misra"
