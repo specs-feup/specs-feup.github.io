@@ -9,8 +9,8 @@
     "flow",
     "clava-flow",
     "clava-misra",
-    "clava-lite-benchmarks",
     "clava-code-transforms",
+    "clava-lite-benchmarks",
     "extended-task-graph",
     "clava-vitis-integration",
     "hoopa"
