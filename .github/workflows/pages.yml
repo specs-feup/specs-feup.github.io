@@ -64,7 +64,6 @@ jobs:
             "specs-feup/clava-lite-benchmarks"
             "specs-feup/extended-task-graph"
             "specs-feup/clava-vitis-integration"
-            "specs-feup/hoopa"
           )
 
           for repo_entry in "${REPOS[@]}"; do
