@@ -14,8 +14,8 @@
 
 # LARA Libraries Status
 
-| Project | Compiler | Description | Main | Staging |
-| ------- | -------- | ----------- | ---- | ------- |
-[Coral](https://github.com/specs-feup/coral) | Clava | Rust-like borrow-checker for C | [![](https://github.com/specs-feup/coral/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/coral/actions/workflows/main.yml) | [![](https://github.com/specs-feup/coral/actions/workflows/staging.yml/badge.svg)](https://github.com/specs-feup/coral/actions/workflows/staging.yml) |
-[Clava Benchmarks](https://github.com/specs-feup/clava-benchmarks-tests) | Clava | Prepackaged benchmarks for Clava | [![](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/main.yml) | [![](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/staging.yml/badge.svg)](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/staging.yml) |
-[Clava Examples](https://github.com/specs-feup/clava-examples) | Clava | Examples for Clava | [![](https://github.com/specs-feup/clava-examples/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-examples/actions/workflows/main.yml) | [![](https://github.com/specs-feup/clava-examples/actions/workflows/staging.yml/badge.svg)](https://github.com/specs-feup/clava-examples/actions/workflows/staging.yml) |
+| Project | Compiler | Description | Main |
+| ------- | -------- | ----------- | ---- |
+[Coral](https://github.com/specs-feup/coral) | Clava | Rust-like borrow-checker for C | [![](https://github.com/specs-feup/coral/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/coral/actions/workflows/main.yml) |
+[Clava Benchmarks](https://github.com/specs-feup/clava-benchmarks-tests) | Clava | Prepackaged benchmarks for Clava | [![](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/main.yml) |
+[Clava Examples](https://github.com/specs-feup/clava-examples) | Clava | Examples for Clava | [![](https://github.com/specs-feup/clava-examples/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-examples/actions/workflows/main.yml) |
