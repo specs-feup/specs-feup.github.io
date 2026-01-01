@@ -18,16 +18,16 @@
 [Clava Benchmarks](https://github.com/specs-feup/clava-benchmarks-tests) | Clava | Prepackaged benchmarks for Clava | [![](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/main.yml) |
 [Clava Examples](https://github.com/specs-feup/clava-examples) | Clava | Examples for Clava | [![](https://github.com/specs-feup/clava-examples/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-examples/actions/workflows/main.yml) |
 
-<!-- 
+
 # Legacy / Phased Out
 
-| Project | Language | Legacy (LARA 2.0) |
-| ------- | -------- | ----------------- |
-| [Lara Framework](https://github.com/specs-feup/lara-framework) | N/A | [![](https://github.com/specs-feup/lara-framework/actions/workflows/ant-lara-2.0-legacy.yml/badge.svg)](https://github.com/specs-feup/lara-framework/actions/workflows/ant-lara-2.0-legacy.yml) |
-| [Clava](https://github.com/specs-feup/clava)                   | C, C++,<br> CUDA, OpenCL | [![](https://github.com/specs-feup/clava/actions/workflows/ant-lara-2.0-legacy.yml/badge.svg)](https://github.com/specs-feup/clava/actions/workflows/ant-lara-2.0-legacy.yml) |
-| [Kadabra](https://github.com/specs-feup/kadabra)               | Java | [![](https://github.com/specs-feup/kadabra/actions/workflows/ant-lara-2.0-legacy.yml/badge.svg)](https://github.com/specs-feup/kadabra/actions/workflows/ant-lara-2.0-legacy.yml) |
-| [Jackdaw](https://github.com/specs-feup/jsweaver)              | Javascript | [![](https://github.com/specs-feup/jsweaver/actions/workflows/ant-lara-2.0-legacy.yml/badge.svg)](https://github.com/specs-feup/jsweaver/actions/workflows/ant-lara-2.0-legacy.yml) |
-| [Matisse](https://github.com/specs-feup/matisse)               | MATLAB | [![](https://github.com/specs-feup/matisse/actions/workflows/ant-lara-2.0-legacy.yml/badge.svg)](https://github.com/specs-feup/matisse/actions/workflows/ant-lara-2.0-legacy.yml) |
--->
+| Project | Language | LARA 2.0 | LARA 3.0 |
+| ------- | -------- | -------- | -------- |
+| [Lara Framework](https://github.com/specs-feup/lara-framework) | N/A | [![](https://github.com/specs-feup/lara-framework/actions/workflows/ant-lara-2.0-legacy.yml/badge.svg)](https://github.com/specs-feup/lara-framework/actions/workflows/ant-lara-2.0-legacy.yml) | [![nightly](https://github.com/specs-feup/lara-framework/actions/workflows/nightly.yml/badge.svg?branch=lara-3.0)](https://github.com/specs-feup/lara-framework/actions/workflows/nightly.yml) |
+| [Clava](https://github.com/specs-feup/clava)                   | C, C++,<br> CUDA, OpenCL | [![](https://github.com/specs-feup/clava/actions/workflows/ant-lara-2.0-legacy.yml/badge.svg)](https://github.com/specs-feup/clava/actions/workflows/ant-lara-2.0-legacy.yml) | [![nightly](https://github.com/specs-feup/clava/actions/workflows/nightly.yml/badge.svg?branch=lara-3.0)](https://github.com/specs-feup/clava/actions/workflows/nightly.yml) |
+| [Kadabra](https://github.com/specs-feup/kadabra)               | Java | [![](https://github.com/specs-feup/kadabra/actions/workflows/ant-lara-2.0-legacy.yml/badge.svg)](https://github.com/specs-feup/kadabra/actions/workflows/ant-lara-2.0-legacy.yml) | [![nightly](https://github.com/specs-feup/kadabra/actions/workflows/nightly.yml/badge.svg?branch=lara-3.0)](https://github.com/specs-feup/kadabra/actions/workflows/nightly.yml) |
+| [Jackdaw](https://github.com/specs-feup/jsweaver)              | Javascript | [![](https://github.com/specs-feup/jsweaver/actions/workflows/ant-lara-2.0-legacy.yml/badge.svg)](https://github.com/specs-feup/jsweaver/actions/workflows/ant-lara-2.0-legacy.yml) | [![nightly](https://github.com/specs-feup/jsweaver/actions/workflows/nightly.yml/badge.svg?branch=master)](https://github.com/specs-feup/jsweaver/actions/workflows/nightly.yml) |
+| [Matisse](https://github.com/specs-feup/matisse)               | MATLAB | [![](https://github.com/specs-feup/matisse/actions/workflows/ant-lara-2.0-legacy.yml/badge.svg)](https://github.com/specs-feup/matisse/actions/workflows/ant-lara-2.0-legacy.yml) | N/A |
+
 
 
