@@ -55,16 +55,16 @@ jobs:
           REPOS=(
             "specs-feup/lara-framework"
             "specs-feup/clava"
-            "specs-feup/kadabra"
+            "specs-feup/kadabra@kadabra-js"
             "specs-feup/alpakka"
             "specs-feup/flow"
             "specs-feup/clava-flow"
             "specs-feup/coral"
-#            "specs-feup/clava-misra"
-#            "specs-feup/clava-code-transforms"
-#            "specs-feup/clava-lite-benchmarks"
-#            "specs-feup/extended-task-graph"
-#            "specs-feup/clava-vitis-integration"
+            "specs-feup/clava-misra"
+            "specs-feup/clava-code-transforms"
+            "specs-feup/clava-lite-benchmarks"
+            "specs-feup/extended-task-graph"
+            "specs-feup/clava-vitis-integration"
           )
 
           for repo_entry in "${REPOS[@]}"; do
