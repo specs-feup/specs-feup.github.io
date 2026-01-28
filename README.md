@@ -14,10 +14,12 @@
 
 | Project | Compiler | Description | Main |
 | ------- | -------- | ----------- | ---- |
+[flow](https://github.com/specs-feup/flow) | N/A | Graph library with type-safe abstraction layer over Cytoscape  | [![](https://github.com/specs-feup/flow/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/flow/actions/workflows/main.yml) |
+[clava-flow](https://github.com/specs-feup/clava-flow) | Clava | Clava layer on top of flow (e.g., CFGs, call graphs) | [![](https://github.com/specs-feup/clava-flow/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-flow/actions/workflows/main.yml) |
 [Coral](https://github.com/specs-feup/coral) | Clava | Rust-like borrow-checker for C | [![](https://github.com/specs-feup/coral/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/coral/actions/workflows/main.yml) |
 [Clava Benchmarks](https://github.com/specs-feup/clava-benchmarks-tests) | Clava | Prepackaged benchmarks for Clava | [![](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/main.yml) |
 [Clava Examples](https://github.com/specs-feup/clava-examples) | Clava | Examples for Clava | [![](https://github.com/specs-feup/clava-examples/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-examples/actions/workflows/main.yml) |
-[flow](https://github.com/specs-feup/flow) | N/A | Type-safe abstraction layer over Cytoscape  | [![](https://github.com/specs-feup/flow/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/flow/actions/workflows/main.yml) |
+
 
 # Legacy / Phased Out
 
