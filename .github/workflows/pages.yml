@@ -55,7 +55,7 @@ jobs:
           REPOS=(
             "specs-feup/lara-framework"
             "specs-feup/clava"
-            "specs-feup/kadabra@kadabra-js"
+            "specs-feup/kadabra"
             "specs-feup/alpakka"
             "specs-feup/flow"
             "specs-feup/clava-flow"
