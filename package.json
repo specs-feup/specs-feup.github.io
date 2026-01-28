@@ -8,7 +8,12 @@
     "alpakka/Alpakka-JS",
     "flow",
     "clava-flow",
-    "coral"
+    "coral",
+    "clava-misra",
+    "clava-code-transforms",
+    "clava-lite-benchmarks",
+    "extended-task-graph",
+    "clava-vitis-integration"
   ],
   "scripts": {
     "docs": "typedoc --out docs/"
