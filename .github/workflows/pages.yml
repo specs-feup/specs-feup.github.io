@@ -82,6 +82,7 @@ jobs:
         run: npm install
 
       - name: Build all projects
+        run: |
           echo "${{ steps.project-list.outputs.projects }}" | while read -r proj; do
             echo "Building $proj"
             (cd "$proj" && npm run build)
