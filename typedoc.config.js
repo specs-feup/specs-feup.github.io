@@ -1,4 +1,4 @@
-import info from './package.json' assert { type: 'json' };
+import info from './package.json' with { type: 'json' };
 
 // Ref: https://github.com/Gerrit0/typedoc-packages-example
 export default {

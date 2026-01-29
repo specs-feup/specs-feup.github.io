@@ -6,6 +6,7 @@
     "clava/Clava-JS",
     "kadabra/Kadabra-JS",
     "alpakka/Alpakka-JS",
+    "anyweaver/AnyWeaver-JS",
     "flow",
     "clava-flow",
     "coral",
@@ -19,7 +20,7 @@
     "docs": "typedoc --out docs/"
   },
   "devDependencies": {
-    "typedoc": "^0.26.4",
-    "typedoc-plugin-rename-defaults": "^0.7.1"
+    "typedoc": "^0.28.15",
+    "typedoc-plugin-rename-defaults": "^0.7.3"
   }
 }
