@@ -31,9 +31,6 @@ jobs:
       - name: Checkout main repo
         uses: actions/checkout@v6
 
-      #- name: Install jq
-      #  run: sudo apt-get update && sudo apt-get install -y jq
-
       - name: Read project list from package.json
         id: project-list
         run: |
@@ -84,11 +81,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-#      - name: Build all projects
-#          echo "${{ steps.project-list.outputs.projects }}" | while read -r proj; do
-#            echo "Building $proj"
-#            (cd "$proj" && npm run build)
-#          done
+      - name: Build all projects
+          echo "${{ steps.project-list.outputs.projects }}" | while read -r proj; do
+            echo "Building $proj"
+            (cd "$proj" && npm run build)
+          done
 
       - name: Build documentation 
         run: npm run docs
