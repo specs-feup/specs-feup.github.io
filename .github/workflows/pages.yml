@@ -81,10 +81,10 @@ jobs:
             fi
           done
 
+      - name: Install dependencies
+        run: npm install
+
 #      - name: Build all projects
-#        run: |
-#          npm install
-#
 #          echo "${{ steps.project-list.outputs.projects }}" | while read -r proj; do
 #            echo "Building $proj"
 #            (cd "$proj" && npm run build)
