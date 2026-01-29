@@ -9,7 +9,6 @@
     "anyweaver/AnyWeaver-JS",
     "flow",
     "clava-flow",
-    "coral",
     "clava-misra",
     "clava-code-transforms",
     "clava-lite-benchmarks",
