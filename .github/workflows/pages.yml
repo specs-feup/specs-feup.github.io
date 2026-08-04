@@ -55,6 +55,7 @@ jobs:
             "specs-feup/kadabra"
             "specs-feup/alpakka"
             "specs-feup/anyweaver"
+            "specs-feup/metafor"            
             "specs-feup/flow"
             "specs-feup/clava-flow"
             "specs-feup/coral"
