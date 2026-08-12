@@ -9,16 +9,21 @@
 | [Alpakka](https://github.com/specs-feup/alpakka)               | Smali<br> (Android bytecode) | [![nightly](https://github.com/specs-feup/alpakka/actions/workflows/nightly.yml/badge.svg?branch=main)](https://github.com/specs-feup/alpakka/actions/workflows/nightly.yml) | [![nightly](https://github.com/specs-feup/alpakka/actions/workflows/nightly.yml/badge.svg?branch=staging)](https://github.com/specs-feup/alpakka/actions/workflows/nightly.yml) |
 | [Metafor](https://github.com/specs-feup/fortran-transpiler)               | Fortran | [![nightly](https://github.com/specs-feup/fortran-transpiler/actions/workflows/nightly.yml/badge.svg?branch=main)](https://github.com/specs-feup/fortran-transpiler/actions/workflows/nightly.yml) | [![nightly](https://github.com/specs-feup/fortran-transpiler/actions/workflows/nightly.yml/badge.svg?branch=staging)](https://github.com/specs-feup/fortran-transpiler/actions/workflows/nightly.yml) |
 
+# SPeCS Node Libraries Status
 
-# LARA Libraries Status
+| Project | Description | Main |
+| ------- | ----------- | ---- |
+[flow](https://github.com/specs-feup/flow) | Graph library with type-safe abstraction layer over Cytoscape  | [![](https://github.com/specs-feup/flow/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/flow/actions/workflows/main.yml) |
 
-| Project | Compiler | Description | Main |
-| ------- | -------- | ----------- | ---- |
-[flow](https://github.com/specs-feup/flow) | N/A | Graph library with type-safe abstraction layer over Cytoscape  | [![](https://github.com/specs-feup/flow/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/flow/actions/workflows/main.yml) |
-[clava-flow](https://github.com/specs-feup/clava-flow) | Clava | Clava layer on top of flow (e.g., CFGs, call graphs) | [![](https://github.com/specs-feup/clava-flow/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-flow/actions/workflows/main.yml) |
-[Coral](https://github.com/specs-feup/coral) | Clava | Rust-like borrow-checker for C | [![](https://github.com/specs-feup/coral/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/coral/actions/workflows/main.yml) |
-[Clava Benchmarks](https://github.com/specs-feup/clava-benchmarks-tests) | Clava | Prepackaged benchmarks for Clava | [![](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-benchmarks-tests/actions/workflows/main.yml) |
-[Clava Examples](https://github.com/specs-feup/clava-examples) | Clava | Examples for Clava | [![](https://github.com/specs-feup/clava-examples/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-examples/actions/workflows/main.yml) |
+# Clava Libraries Status
+
+| Project | Description | Main |
+| ------- | ----------- | ---- |
+[clava-code-transforms](https://github.com/specs-feup/clava-code-transforms) | A set of C/C++ code transformations | [![](https://github.com/specs-feup/clava-code-transforms/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-code-transforms/actions/workflows/main.yml) |
+[clava-flow](https://github.com/specs-feup/clava-flow) | Clava layer on top of flow (e.g., CFGs, call graphs) | [![](https://github.com/specs-feup/clava-flow/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-flow/actions/workflows/main.yml) |
+[coral](https://github.com/specs-feup/coral) |Rust-like borrow-checker for C | [![](https://github.com/specs-feup/coral/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/coral/actions/workflows/main.yml) |
+[clava-lite-benchmarks](https://github.com/specs-feup/clava-lite-benchmarks) | Prepackaged benchmarks for Clava | [![](https://github.com/specs-feup/clava-lite-benchmarks/actions/workflows/main.yml/badge.svg)](https://github.com/specs-feup/clava-lite-benchmarks/actions/workflows/main.yml) |
+
 
 
 # Legacy / Phased Out
